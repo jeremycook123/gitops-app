@@ -4,5 +4,4 @@ metadata:
   name: webapp-cfg
   namespace: cloudacademy
 data:
-  message: "Staging"
   bgcolor: "orange"

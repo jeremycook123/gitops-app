@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: webapp
-  namespace: cloudacademy
 spec:
   replicas: 1
   selector:
@@ -21,10 +20,7 @@ spec:
         - containerPort: 80
         env:
         - name: MESSAGE
-          valueFrom:
-            configMapKeyRef:
-              name: webapp-cfg
-              key: message
+          value: "Default Message"
         - name: BACKGROUND_COLOR
           valueFrom:
             configMapKeyRef:

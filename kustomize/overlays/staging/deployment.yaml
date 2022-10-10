@@ -4,11 +4,11 @@ metadata:
   name: webapp
   namespace: cloudacademy
 spec:
-  replicas: 4
+  replicas: 2
   template:
     spec:
       containers:
       - name: webapp
         env:
         - name: MESSAGE
-          value: "Production v2"
+          value: "Staging v2"
