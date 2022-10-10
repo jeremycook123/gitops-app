@@ -5,3 +5,10 @@ metadata:
   namespace: cloudacademy
 spec:
   replicas: 4
+  template:
+    spec:
+      containers:
+      - name: webapp
+        env:
+        - name: MESSAGE
+          value: "yoza!!"
