@@ -8,7 +8,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: staging.20.72.146.3.nip.io
+  - host: staging.20.121.170.192.nip.io
     http:
       paths:
       - pathType: Prefix
