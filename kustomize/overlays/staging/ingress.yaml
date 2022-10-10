@@ -12,7 +12,7 @@ spec:
     http:
       paths:
       - pathType: Prefix
-        path: /staging
+        path: /gitops
         backend:
           service:
             name: webapp-svc

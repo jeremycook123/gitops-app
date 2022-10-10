@@ -12,7 +12,7 @@ spec:
     http:
       paths:
       - pathType: Prefix
-        path: /prod
+        path: /gitops
         backend:
           service:
             name: webapp-svc
