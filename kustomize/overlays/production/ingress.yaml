@@ -8,7 +8,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: prod.20.163.244.30.nip.io
+  - host: prod.20.237.36.203.nip.io
     http:
       paths:
       - pathType: Prefix
