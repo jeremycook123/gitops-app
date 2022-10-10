@@ -3,15 +3,13 @@ kind: Ingress
 metadata:
   name: webapp-ingress
   namespace: cloudacademy
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /$2
 spec:
   ingressClassName: nginx
   rules:
   - http:
       paths:
       - pathType: Prefix
-        path: /yellow(/|$)(.*)
+        path: /
         backend:
           service:
             name: webapp-svc
