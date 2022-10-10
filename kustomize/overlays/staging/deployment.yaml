@@ -11,4 +11,4 @@ spec:
       - name: webapp
         env:
         - name: MESSAGE
-          value: "Staging v2"
+          value: "Staging CloudAcademy GitOps"

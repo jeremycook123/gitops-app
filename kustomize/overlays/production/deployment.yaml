@@ -11,4 +11,4 @@ spec:
       - name: webapp
         env:
         - name: MESSAGE
-          value: "Prod v2"
+          value: "Prod CloudAcademy GitOps"
