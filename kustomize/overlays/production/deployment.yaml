@@ -2,13 +2,12 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: webapp
-  namespace: cloudacademy
 spec:
-  replicas: 4
+  replicas: 2
   template:
     spec:
       containers:
       - name: webapp
         env:
         - name: MESSAGE
-          value: "Production v2"
+          value: "Prod v2"
