@@ -11,4 +11,5 @@ bases:
 
 patchesStrategicMerge:
 - configmap.yaml
+- deployment.yaml
 - ingress.yaml

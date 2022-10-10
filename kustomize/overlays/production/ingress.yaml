@@ -3,13 +3,17 @@ kind: Ingress
 metadata:
   name: webapp-ingress
   namespace: cloudacademy
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: nginx
   rules:
   - http:
       paths:
       - pathType: Prefix
-        path: /
+        path: /prod(/|$)(.*)
         backend:
           service:
             name: webapp-svc
