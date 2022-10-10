@@ -5,4 +5,4 @@ metadata:
   namespace: cloudacademy
 data:
   message: "Production"
-  bgcolor: "cyan"
+  bgcolor: "yellow"
